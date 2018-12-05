@@ -31,8 +31,8 @@
             
              ?>
             <tr>
-            <td><?php  $Matricula = $reserva["id_usuario.nome"]; echo "$Codigo<br>"; ?> </td>
-            <td><?php  $codigo_livro = $reserva["cod_livro.nome"]; echo "$codigo_livro<br>"; ?> </td>
+            <td><?php  $Matricula = $reserva["id_usuario"]; echo "$Matricula<br>"; ?> </td>
+            <td><?php  $codigo_livro = $reserva["cod_livro"]; echo "$codigo_livro<br>"; ?> </td>
             <td><?php  $data = $reserva["data_reserva"]; echo "$data<br>"; ?> </td>
             <td><?php  $prazo = $reserva["prazo"]; echo "$prazo<br>"; ?> </td>
 
