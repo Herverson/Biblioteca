@@ -38,9 +38,3 @@
   </div><!-- /.container-fluid -->
 </nav>
 <br/>
-
-<footer class="footer navbar-inverse"">
-      <div class="container">
-        <p class="text-muted">Biblioteca</p>
-      </div>
-</footer>

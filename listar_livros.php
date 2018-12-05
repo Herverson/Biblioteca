@@ -1,34 +1,33 @@
+<?php include("menu.php");?>
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
-<link href="css/bootstrap.css" rel=stylesheet>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <title>Lista Livros</title>
 </head>
 
 <body>
-<<<<<<< HEAD
-<?php require_once "conexao.php" ?>
-=======
-<?php require_once "conexao.php" 
-?>
->>>>>>> c90c8bf8cfc62d9b6a4087816d141ea8320d68d5
 <div class="container">
-	<div class="row">
-    	<div class="col-lg-10">
+	<table class="table">
+	  <thead>
+		<tr>
+		  <th>Código do livro</th>
+		  <th>Nome</th>
+		  <th>Autor</th>
+		  <th>Editora</th>
+		  <th>Edição</th>
+		  <th>Capa</th>
+		  <th>Ação</th>
+		</tr>
+	  </thead>
+  	  <tbody>
 
-			<table class="table table-bordered table-hover">
-			  <tr>
-				<td>Codigo</td>
-				<td>Nome</td>
-				<td>Autor</td>
-				<td>Editora</td>
-        <td>Edição</td>
-        <td>Capa</td>
-			  </tr>
 
 	       <?php
-     
+			require_once('appvars.php');
+     		require_once "conexao.php";
 			$query = "SELECT * FROM livros ORDER BY nome";
 			
 			$result = mysqli_query($dbc, $query);
@@ -41,16 +40,21 @@
 				<td><?php  $nome = $livro["nome"]; echo "$nome<br>"; ?> </td>
 				<td><?php  $autor = $livro["autor"]; echo "$autor<br>"; ?> </td>
 				<td><?php  $editora = $livro["editora"]; echo "$editora<br>"; ?> </td>
-        <td><?php  $edicao = $livro["edicao"]; echo "$edicao<br>"; ?> </td>
-       
+        		<td><?php  $edicao = $livro["edicao"]; echo "$edicao<br>"; ?> </td>
+        		<?php echo '<td><img src="' . BI_UPLOADPATH . $livro['capa'] . '" class="img-fluid" alt="capa livro" height=100 width=auto/></td>'; ?>
+        		<td>
+        			<?php echo "<a class=btn btn-primary href=editar_livro.php?livro=".$livro['cod_livro']."><i
+					class=material-icons>edit</i></a>"; ?>
+        			<?php echo "<a class=btn btn-danger href=excluir_livro.php?livro=".$livro['cod_livro']."><i class=material-icons>remove</i></a>"; ?>
+        		</td>       
 			</tr>
-    <?php
-    }
-    ?>
+    		<?php
+    		}
+    		?>
     </table>
 </div>
 </div>
-	  <script src="js/jquery.min.js"></script>
+	<script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

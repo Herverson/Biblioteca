@@ -1,21 +1,21 @@
 <?php
-include('conexao.php');
+include "conexao.php";
 
-$cod_livro = $_POST['cod_livro'];
+$cod_livro = $_GET['cod_livro'];
+//$sql = "DELETE FROM contas WHERE conta='$conta';";
 	  
-$query = "DELETE FROM livros WHERE cod_livro = '$cod_livro'";
-    mysqli_query($dbc, $query)
-      or die ("<META HTTP-EQUIV=REFRESH CONTENT='0; URL=http://localhost/biblioteca/#'>
-		<script type=\"text/javascript\">
-		alert(\"Ocorreu um problema.\");
-        </script>");
+$query = "DELETE FROM livros WHERE cod_livro = '$cod_livro';";
+$resultaao = mysqli_query($dbc, $query)
+      or die ("erro");
         //falta colocar a rota 
-	if($query)
+	if($resultado)
 	{
-        //falta colocar a rota de redirecionamento
-		echo"<META HTTP-EQUIV=REFRESH CONTENT='0; URL=http://localhost/biblioteca/#'><script type=\"text/javascript\">
-		alert(\"Livro excluido com sucesso.\");
-		</script>";
+		header("location:listar_livros.php");
+	}
+	else
+	{
+		echo '<div class="alert alert-danger" role="alert">Erro ao excluir.</div>';
+		header("location:listar_livros.php");
 	}
 	 mysqli_close($dbc); 
 ?>
