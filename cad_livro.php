@@ -1,3 +1,4 @@
+<?php include("menu.php"); ?>
 <!doctype html>
 <html>
 <head>
@@ -34,11 +35,10 @@
     			<input type="file" id="capa"  name="capa">
     			<p class="help-block">Imagem do livro</p>
   			</div>
-			<input type="submit" value="Submit" name="submit" class="btn btn-primary">
+			<input type="submit" value="Cadastrar" name="submit" class="btn btn-primary">
 		</form>
 	</div>
 </body>
-<script src="js/bootstrap.min.js">
-	
-</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </html>
