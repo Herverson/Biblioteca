@@ -1,5 +1,6 @@
 <?php
 include('conexao.php');
+include('menu.php');
 $cod_livro = $_POST['cod_livro'];
 $nome = $_POST['nome'];
 $autor = $_POST['autor'];
