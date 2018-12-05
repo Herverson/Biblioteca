@@ -7,7 +7,12 @@
 </head>
 
 <body>
+<<<<<<< HEAD
 <?php require_once "conexao.php" ?>
+=======
+<?php require_once "conexao.php" 
+?>
+>>>>>>> c90c8bf8cfc62d9b6a4087816d141ea8320d68d5
 <div class="container">
 	<div class="row">
     	<div class="col-lg-10">

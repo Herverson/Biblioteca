@@ -1,5 +1,9 @@
 <?php
 include('conexao.php');
+<<<<<<< HEAD
+=======
+include('menu.php');
+>>>>>>> c90c8bf8cfc62d9b6a4087816d141ea8320d68d5
 $nome = $_POST['nome'];
 $contato = $_POST['contato'];
 $senha = $_POST['senha'];
