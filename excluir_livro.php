@@ -2,7 +2,6 @@
 include "conexao.php";
 
 $cod_livro = $_GET['cod_livro'];
-//$sql = "DELETE FROM contas WHERE conta='$conta';";
 	  
 $query = "DELETE FROM livros WHERE cod_livro = '$cod_livro';";
 $resultaao = mysqli_query($dbc, $query)
