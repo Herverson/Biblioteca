@@ -31,7 +31,7 @@ include "verificar.php";
 			require_once('appvars.php');
      		require_once "conexao.php";
 			$query = "SELECT * FROM livros ORDER BY nome";
-			
+
 			$result = mysqli_query($dbc, $query);
 			while ($livro = mysqli_fetch_array($result)) 
 			{

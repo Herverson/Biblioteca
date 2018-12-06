@@ -11,8 +11,8 @@
 	<div class="container">
 		<form id="form1" name="form1" method="post" action="realizar_login.php">
 			<div class="form-group">
-				<label for="Matricula">Matricula</label>
-				<input type="text" class="form-control" id="Matricula" name="Matricula" placeholder="Matricula">
+				<label for="Matricula">Bibliotecácrio</label>
+				<input type="text" class="form-control" id="Matricula" name="Matricula" placeholder="Identificador">
 			</div>
 			<div class="form-group">
 				<label for="senha">Senha</label>
