@@ -1,6 +1,6 @@
 <?php
  include("menu.php");
-include "verficar.php";
+include "verificar.php";
 ?>
 <!doctype html>
 <html>

@@ -1,5 +1,5 @@
-<?php include("menu.php") 
-include "verficar.php";?>
+<?php include("menu.php"); 
+include "verificar.php";?>
 <!doctype html>
 <html>
 <head>
@@ -13,7 +13,7 @@ include "verficar.php";?>
 		<form id="form1" name="form1" method="post" action="salva_exemplar.php">
 			<div class="form-group">
 				<label for="nome">Código do livro</label>
-				<input type="text" class="form-control" name="cod_livro" id="cod_livro"  placeholder="Código do livro">
+				<input type="hidden" class="form-control" name="cod_livro" id="cod_livro"  placeholder="Código do livro" value="<?php $_GET['cod_livro'];?>">
 			</div>
 			<div class="form-group">
 				<label for="Ano">Ano</label>

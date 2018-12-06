@@ -1,4 +1,4 @@
-<?php include "verficar.php";?>
+<?php include "menu.php";include "verificar.php";?>
 <!doctype html>
 <html>
 <head>
@@ -30,7 +30,6 @@
 		</form>
 	</div>
 </body>
-<script src="js/bootstrap.js">
-	
-</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </html>

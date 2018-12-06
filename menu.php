@@ -19,19 +19,21 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cadastro<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="cad_livro.php">Livro</a></li>
-            <li><a href="cad_exemplar.php">Exemplares</a></li>
+            <li><a href="cad_bibliotecario.php">Bibliotecário</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Listar<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="listar_livros.php">Livros</a></li>
-            <!--<li><a href="listar_contas.php">Contas</a></li>-->
+            <li><a href="listar_resevas.php">Reservas</a></li>
           </ul>
         </li>
-        <li><a href="#">#</a></li>
-        <li><a href="#">#</a></li>
-        <li><a href="#">#</a></li>
+        <li><a href="reserva.php">Reserva</a></li>
+        <?php 
+			if((isset($_SESSION['usuario'])) && (isset($_SESSION['senha'])))
+		  		echo "<li><a href=login.php>Login</a></li>";
+		  ?>
         
       </ul>
 </div><!-- /.navbar-collapse -->

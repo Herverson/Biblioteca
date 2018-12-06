@@ -1,7 +1,7 @@
 <?php
 include "conexao.php";
 
-$cod_livro = '112';
+$cod_livro = $_GET['cod_livro'];
 	  
 $query1 = "DELETE FROM exemplares WHERE cod_livro = ".$cod_livro;
 mysqli_query($dbc, $query1)
@@ -17,11 +17,15 @@ mysqli_query($dbc, $query1)
             <script type=\"text/javascript\">
             alert(\"problema na exclusão\");
 			</script>");
-			if($query2){
-				echo"<META HTTP-EQUIV=REFRESH CONTENT='0; URL=http://localhost/biblioteca/reserva.php'><script type=\"text/javascript\">
-            alert(\"livro excluido com sucesso.\");
-            </script>";
+			if($query2)
+			{
+				header("location:listar_livros.php");
 			}
         }
+		else
+		{
+			echo '<div class="alert alert-danger" role="alert">Erro ao excluir.</div>';
+		     header("location:listar_livros.php");
+		}
         mysqli_close($dbc);
 ?>
