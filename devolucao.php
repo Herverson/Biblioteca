@@ -1,4 +1,4 @@
-<?php include "verficar.php"?>
+<?php include "verificar.php"?>
 <!doctype html>
 <html>
 <head>
