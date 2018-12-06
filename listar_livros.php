@@ -45,9 +45,9 @@ include "verificar.php";
         		<td><?php  $edicao = $livro["edicao"]; echo "$edicao<br>"; ?> </td>
         		<?php echo '<td><img src="' . BI_UPLOADPATH . $livro['capa'] . '" class="img-fluid" alt="capa livro" height=100 width=auto/></td>'; ?>
         		<td>
-        			<?php echo "<a class=btn btn-primary href=editar_livro.php?livro=".$livro['cod_livro']."><i
+        			<?php echo "<a class=btn btn-primary href=editar_livro.php?cod_livro=".$livro['cod_livro']."><i
 					class=material-icons>edit</i></a>"; ?>
-        			<?php echo "<a class=btn btn-danger href=excluir_livro.php?livro=".$livro['cod_livro']."><i class=material-icons>remove</i></a>"; ?>
+        			<?php echo "<a class=btn btn-danger href=excluir_livro.php?cod_livro=".$livro['cod_livro']."><i class=material-icons>remove</i></a>"; ?>
         		</td>       
 			</tr>
     		<?php

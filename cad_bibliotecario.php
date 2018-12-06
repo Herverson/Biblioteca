@@ -1,5 +1,5 @@
 <?php include("menu.php");
-include "verficar.php";?>
+include "verificar.php";?>
 <!doctype html>
 <html>
 <head>
@@ -27,11 +27,6 @@ include "verficar.php";?>
 				<label for="senha_confirmacao">Confirmar Senha</label>
 				<input type="password" class="form-control" id="senha_confirmacao" name="senha_confirmacao" placeholder="Confirmar Senha">
 			</div>
-			<div class="form-group">
-    			<label for="foto">Avatar</label>
-    			<input type="file" id="foto" name="foto">
-    			<p class="help-block">Imagem do bibliotecário</p>
-  			</div>
 			<input type="submit" value="Cadastrar" name="submit" class="btn btn-primary">
 
 		</form>

@@ -11,18 +11,17 @@
 	<div class="container">
 		<form id="form1" name="form1" method="post" action="realizar_login.php">
 			<div class="form-group">
-				<label for="Matricula">Bibliotecácrio</label>
+				<label for="Matricula">Bibliotecário</label>
 				<input type="text" class="form-control" id="Matricula" name="Matricula" placeholder="Identificador">
 			</div>
 			<div class="form-group">
 				<label for="senha">Senha</label>
 				<input type="password" class="form-control" id="senha" name="Senha" placeholder="Senha">
 			</div>
-			<input type="submit" value="Cadastrar" name="submit" class="btn btn-primary">
+			<input type="submit" value="Entrar" name="submit" class="btn btn-primary">
 		</form>
 	</div>
 </body>
-<script src="js/bootstrap.js">
-	
-</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </html>
