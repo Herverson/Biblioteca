@@ -2,6 +2,7 @@
 include('conexao.php');
 $matricula = $_POST['matricula'];
 $cod_exemplar = $_POST['cod_exemplar'];
+$data_devolucao  = date('d/m/y');
 
 $query = "INSERT INTO devolucoes (matricula, cod_exemplar)  VALUES ('$matricula', '$cod_exemplar')";
     mysqli_query($dbc, $query)
