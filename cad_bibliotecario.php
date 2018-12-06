@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <link href="css/bootstrap.css" rel=stylesheet>
-<title>Untitled Document</title>
+<title>cadastro bibliotecario</title>
 </head>
 
 <body>
@@ -20,11 +20,11 @@
 			</div>
 			<div class="form-group">
 				<label for="senha">Senha</label>
-				<input type="text" class="form-control" id="senha" name="senha" placeholder="Senha">
+				<input type="password" class="form-control" id="senha" name="senha" placeholder="Senha">
 			</div>
 			<div class="form-group">
 				<label for="senha_confirmacao">Confirmar Senha</label>
-				<input type="text" class="form-control" id="senha_confirmacao" name="senha_confirmacao" placeholder="Confirmar Senha">
+				<input type="password" class="form-control" id="senha_confirmacao" name="senha_confirmacao" placeholder="Confirmar Senha">
 			</div>
 			<div class="form-group">
     			<label for="foto">Avatar</label>
