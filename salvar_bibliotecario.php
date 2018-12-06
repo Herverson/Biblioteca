@@ -1,9 +1,5 @@
 <?php
 include('conexao.php');
-<<<<<<< HEAD
-=======
-include('menu.php');
->>>>>>> c90c8bf8cfc62d9b6a4087816d141ea8320d68d5
 $nome = $_POST['nome'];
 $contato = $_POST['contato'];
 $senha = $_POST['senha'];
@@ -20,7 +16,7 @@ $query = "INSERT INTO bibliotecarios (nome, contato, senha, foto)  VALUES ('$nom
 		</script>");
 	if($query)
 	{
-		echo"<META HTTP-EQUIV=REFRESH CONTENT='0; URL=http://localhost/biblioteca/listar_devolucao.html'>
+		echo"<META HTTP-EQUIV=REFRESH CONTENT='0; URL=http://localhost/biblioteca/login.php'>
 		<script type=\"text/javascript\">
 		alert(\"Cadastro realizado com sucesso.\");
 		</script>";
