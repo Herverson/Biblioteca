@@ -1,8 +1,9 @@
+<?php include "verficar.php";?>
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
-<link href="css/bootstrap.css" rel=stylesheet>
+<link href="css/bootstrap.css" rel="stylesheet">
 <title>Reserva</title>
 </head>
 

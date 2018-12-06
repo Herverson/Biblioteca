@@ -1,5 +1,6 @@
 <?php
  include("menu.php");
+include "verficar.php";
 ?>
 <!doctype html>
 <html>
@@ -10,6 +11,7 @@
 </head>
 
 <body>
+	<div class="container">
 <?php
 require_once('appvars.php');
  require_once('conexao.php');
@@ -46,8 +48,7 @@ require_once('appvars.php');
 				  </div>';
             echo '<p><strong>Nome:</strong> ' . $nome . '<br />';
             echo '<strong>Autor:</strong> ' . $autor . '<br />';
-            echo '<img src="' . BI_UPLOADPATH . $capa . '" alt="Livro imagem" /></p>';
-            echo '<p><a href="index.php">&lt;&lt; Voltar</a></p>';
+            echo '<img src="' . BI_UPLOADPATH . $capa . '" alt="Livro imagem" alt="capa livro" height=100 width=auto/></p>';
 
             // limpa o form
             $cod_livro = "";
@@ -81,7 +82,7 @@ require_once('appvars.php');
     }
   }
 ?>
-	<div class="container">
+
 		<form enctype="multipart/form-data" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 			<input type="hidden" name="MAX_FILE_SIZE" value="<?php echo BI_MAXFILESIZE; ?>" />
 			<div class="form-group">

@@ -1,4 +1,5 @@
-<?php include("menu.php")?>
+<?php include("menu.php");
+include "verficar.php";?>
 <!doctype html>
 <html>
 <head>
